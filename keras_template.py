@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Jun 10 14:42:43 2020
-
-@author: VMRL-Robot
 """
 
 import numpy as np
