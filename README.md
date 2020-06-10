@@ -1,2 +1,2 @@
-# DeViL-cAt-Man
-DeViL cAt Man in Shopee code league 2020
+# DeViL-cAt-MaN
+DeViL cAt MaN in Shopee code league 2020
