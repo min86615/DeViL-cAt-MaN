@@ -14,3 +14,4 @@ PYTHON version : 3.7
   pip install pandas  
   pip install scikit-learn  
   pip install xgboost==1.0.0  
+  pip install pandas-profiling # If needed
