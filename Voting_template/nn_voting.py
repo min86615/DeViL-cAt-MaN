@@ -13,7 +13,7 @@ from sklearn.model_selection import train_test_split
 
 
 #read in the dataset
-df = pd.read_csv('diabetes_data.csv')
+df = pd.read_csv('data/diabetes_data.csv')
 
 #take a look at the data
 df.head()
