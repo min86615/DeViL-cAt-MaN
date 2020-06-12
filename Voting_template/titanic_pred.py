@@ -2,7 +2,6 @@
 """
 Created on Tue Mar  3 16:55:38 2020
 
-@author: VMRL-Robot
 """
 
 import numpy as np 
@@ -14,9 +13,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from xgboost.sklearn import XGBClassifier
 
-gender_df = pd.read_csv('gender_submission.csv', header=0)
-train_df = pd.read_csv('train.csv')
-test_df = pd.read_csv('test.csv')
+gender_df = pd.read_csv('data/gender_submission.csv', header=0)
+train_df = pd.read_csv('data/train.csv')
+test_df = pd.read_csv('data/test.csv')
 
 train_df['Age'].fillna(value=0, inplace=True)
 test_df['Age'].fillna(value=0, inplace=True)
