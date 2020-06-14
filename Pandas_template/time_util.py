@@ -2,15 +2,17 @@
 """
 Created on Sat Jun 13 21:18:40 2020
 
+@author: Username
 """
 
 import datetime
 from datetime import datetime, timedelta
 
-time_1 = "2020/6/4 1:5:1"
+time_1 = "2020/06/14 11:51:11"
 time_2 = "2019/12/27 12:56:19"
 
 def df_time2std_time(time_1):
+
     time_1 = time_1.split(" ")
 
     t1_d = time_1[0].split("/")
@@ -37,6 +39,13 @@ def df_time2std_time(time_1):
 
 
 def over_hourtime(time_1, time_2, num):
+    """
+    Returns bool. 
+        Whether over timeor not 
+        If over time -> True
+        If not       -> False
+
+    """
     time_1 = str(df_time2std_time(time_1))
     time_2 = str(df_time2std_time(time_2))
     
@@ -54,27 +63,30 @@ def over_hourtime(time_1, time_2, num):
 
 def get_weekdays(time_1):
     """
-    Sunday   -> 0
-    Monday   -> 1
-    Saturday -> 6
+    Returns int.
+        Sunday   -> 0
+        Monday   -> 1
+        Saturday -> 6
     """
     time_1 = str(df_time2std_time(time_1))
     output = datetime(int(time_1[:4]), int(time_1[4:6]), int(time_1[6:8])).strftime("%w")
 
     return output
     
-def get_seasons(day):
+def get_seasons(time_1):
     """
-    Winter -> 0
-    Spring -> 1
-    Summer -> 2
-    Autumn -> 3
+    Returns int.
+        Winter -> 0
+        Spring -> 1
+        Summer -> 2
+        Autumn -> 3
     """
     
-    day_info = day.split("/")
+    time_1 = str(df_time2std_time(time_1))
     season_list = [[12,1,2],[3,4,5],[6,7,8],[9,10,11]]
 
-    month = int(day_info[1])
+    month = int(time_1[4:6])
+    print(month)
     
     if month in season_list[0]:
         season = 0
@@ -93,4 +105,5 @@ if __name__ == "__main__":
     std_time = df_time2std_time(time_1)
     ot = over_hourtime(time_1, time_2, 1)
     week_days = get_weekdays(time_1)
+    season = get_seasons(time_1)
 
