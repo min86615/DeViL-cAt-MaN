@@ -2,7 +2,6 @@
 """
 Created on Sat Jun 13 21:18:40 2020
 
-@author: Username
 """
 
 import datetime
@@ -92,6 +91,6 @@ def get_seasons(day):
 
 if __name__ == "__main__":
     std_time = df_time2std_time(time_1)
-    # ot = over_hourtime(time_1, time_2, 1)
-    # week_days = get_weekdays(time_1)
+    ot = over_hourtime(time_1, time_2, 1)
+    week_days = get_weekdays(time_1)
 
