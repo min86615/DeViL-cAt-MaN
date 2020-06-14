@@ -7,14 +7,14 @@ Created on Sat Jun 13 21:18:40 2020
 import datetime
 from datetime import datetime, timedelta
 
-time_1 = "2020/06/14 11:51:11"
-time_2 = "2019/12/27 12:56:19"
+time_1 = "2020-06-14 11:51:11"
+time_2 = "2019-12-27 12:56:19"
 
 def df_time2std_time(time_1):
 
     time_1 = time_1.split(" ")
 
-    t1_d = time_1[0].split("/")
+    t1_d = time_1[0].split("-")
     
     if (int(t1_d[1]) > 12) or (int(t1_d[2]) > 31):
         raise ValueError("Wrong Date Input") 
