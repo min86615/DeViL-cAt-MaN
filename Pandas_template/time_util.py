@@ -2,7 +2,6 @@
 """
 Created on Sat Jun 13 21:18:40 2020
 
-@author: Username
 """
 
 import datetime
