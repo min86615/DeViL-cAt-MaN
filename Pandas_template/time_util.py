@@ -85,7 +85,6 @@ def get_seasons(time_1):
     season_list = [[12,1,2],[3,4,5],[6,7,8],[9,10,11]]
 
     month = int(time_1[4:6])
-    print(month)
     
     if month in season_list[0]:
         season = 0
