@@ -10,8 +10,10 @@ PYTHON version : 3.7
 ##### Steps :
   pip install Keras==2.2.5  
   pip install tensorflow-gpu==1.14.0  
+  pip install keras  
   pip install matplotlib  
   pip install pandas  
   pip install scikit-learn  
   pip install xgboost==1.0.0  
   pip install pandas-profiling # If needed
+  pip install keras
